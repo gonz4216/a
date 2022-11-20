@@ -1,5 +1,6 @@
 import React from "react";
 import "./hero.css";
+import Info from './Info';
 const Hero = () => {
   return (
     <>
@@ -47,7 +48,9 @@ const Hero = () => {
 
           </div>
         </div>
+        <Info />
       </div>
+     
     </>
   );
 };
