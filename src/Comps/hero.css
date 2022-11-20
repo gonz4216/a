@@ -175,6 +175,7 @@
     width: 380px;
     border-radius: 3px;
     margin-bottom: 20px;
+    transition: all 300ms ease;
 }
 
 .learn--links__annular{
@@ -187,4 +188,13 @@
     height: 78px;
     width: 380px;
     border-radius: 3px;
+    transition: all 300ms ease;
+}
+
+.learn--links__annular:hover{
+    transform: scale(1.04);
+}
+
+.learn--links__total:hover{
+    transform: scale(1.04);
 }
