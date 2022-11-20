@@ -1,5 +1,5 @@
 import React from 'react'
-import './ann.css'
+import './annInfo.css'
 const annInfo = () => {
   return (
     <div className='annInfo'>
