@@ -27,13 +27,13 @@ const Hero = () => {
             <div className="hero--countdowns">
               <div className="hero--countdown__total">
                 <div className="hero--countdown__total-title">TOTAL SOLAR</div>
-                <div className="hero--countdown__total-time">00:00:00:00:00 </div>
+                <div className="hero--countdown__total-time">00:00:00:00:00:00 </div>
               </div>
               <hr className="hero--countdown__br" />
             
               <div className="hero--countdown__annular">
                 <div className="hero--countdown__annular-title">ANNULAR SOLAR</div>
-                <div className="hero--countdown__annular-time">00:00:00:00:00 </div>
+                <div className="hero--countdown__annular-time">00:00:00:00:00:00 </div>
               </div>
               
 
