@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="hero--title">UPCOMING ECLIPSES IN THE UNITED STATES! <hr className="hero--title__br" /></div>
             
             
-            <div className="hero--title__para">On Saturday, April 30, 2022, people in parts of southern South America, Antarctica, 
+            <div className="hero--title__para">On Saturday, April 30, 2023, people in parts of southern South America, Antarctica, 
             and the Pacific and Southern Oceans will have a chance to witness a partial eclipse of the Sun just before and during sunset.</div>
           </div>
          
