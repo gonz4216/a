@@ -4,8 +4,10 @@ import SolarInfo from "./Comps/solarInfo";
 import AnnInfo from "./Comps/annInfo"
 import "./index.css";
 
+
 function App() {
   return (
+
     <Router>
       <Routes>
         <Route path="/" element={<Hero />} />
