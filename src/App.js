@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Hero from "./Comps/Hero";
 import SolarInfo from "./Comps/solarInfo";
@@ -16,7 +15,6 @@ function App() {
         <Route path="/anninfo" element={<AnnInfo />} />
       </Routes>
     </Router>
-
   );
 }
 

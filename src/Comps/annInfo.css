@@ -6,3 +6,107 @@
     background-position: center;
     background-color: #0A070B;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: grifter;
+    src: url(../assets/grifterbold.otf);
+  }
+
+  
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+        /* outline: rgb(52, 245, 52) solid 1px; */
+}
+
+.ann__pointer{
+    cursor: pointer;
+}
+
+/* NAV BAR */
+
+.ann__nav{
+    height: 180px;
+    width: 100%;
+    max-width: 366px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.ann__nav--link__btn{
+    text-decoration: none;
+    list-style-type: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    height: 16px;
+    transition: all 300ms ease;
+}
+
+.ann__nav--link__btn:hover{
+    transform: scale(1.1);
+}
+
+/* TITLE SECTION*/
+
+.ann__container{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    height: 80%;
+    position: relative;
+}
+
+
+.ann__hero--title__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 66%;
+    height: 450px;
+    margin-top: 18px;
+}
+
+.ann__hero--title{
+    color: #637DF4;
+    font: normal normal bold 90px/94px GRIFTER;
+}
+
+.ann__hero--para{
+    color: #FFFFFF;
+    width: 624px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 100px;
+}
+
+/* TIMER */
+
+.ann__timer--container{
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    width: 866px;
+    height: 100px;
+}
+
+
+.ann__timer--timer{
+    font: normal normal bold 90px GRIFTER;
+    color: #FFFFFF;
+}
+
+.ann__timer--text{
+    color: #939393;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    word-spacing: 80px;
+    padding-left: 42px;
+}
