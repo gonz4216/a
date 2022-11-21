@@ -1,13 +1,16 @@
 import React from "react";
 import "./hero.css";
+import Info from './Info';
+
+
 const Hero = () => {
   return (
     <>
       <div className="hero">
         <div className="nav">         
              <a className="nav--link__btn" href="/"> ALL ECLIPSES</a> 
-             <a className="nav--link__btn" href="/"> TOTAL SOLAR</a> 
-             <a className="nav--link__btn" href="/"> ANNULAR SOLAR</a> 
+             <a className="nav--link__btn" href="/solarinfo"> TOTAL SOLAR</a> 
+             <a className="nav--link__btn" href="/anninfo"> ANNULAR SOLAR</a> 
         </div>
 
         <div className="hero--container">
@@ -47,7 +50,9 @@ const Hero = () => {
 
           </div>
         </div>
+        <Info />
       </div>
+     
     </>
   );
 };

@@ -1,0 +1,13 @@
+.solarInfo{
+    background-image:url(../assets/background-Green.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 1000px;
+    background-position: center;
+    background-color: #0A070B;
+}
+
+.solar__hero--title{
+    color: #48C763;
+    font: normal normal bold 90px/94px GRIFTER;
+}
