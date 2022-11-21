@@ -2,55 +2,71 @@ import React from "react";
 import "./hero.css";
 import Info from './Info';
 const Hero = () => {
+  //oct 14 2023
+
+  const countDownDate = new Date("Oct 15, 2024 23:59:59").getTime()
+  let x = setInterval(function() {
+    let now = new Date().getTime()
+
+    let distance = countDownDate - now
+
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24))
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    let min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000)
+    
+  })
   return (
     <>
       <div className="hero">
-        <div className="nav">         
-             <a className="nav--link__btn" href="/"> ALL ECLIPSES</a> 
-             <a className="nav--link__btn" href="/"> TOTAL SOLAR</a> 
-             <a className="nav--link__btn" href="/"> ANNULAR SOLAR</a> 
+        <div className="nav">
+          <a className="nav--link__btn" href="/"> ALL ECLIPSES</a>
+          <a className="nav--link__btn" href="/"> TOTAL SOLAR</a>
+          <a className="nav--link__btn" href="/"> ANNULAR SOLAR</a>
         </div>
 
         <div className="hero--container">
-          <div className="hero--title__card">
-            <div className="hero--title">UPCOMING ECLIPSES IN THE UNITED STATES! <hr className="hero--title__br" /></div>
-            
-            
-            <div className="hero--title__para">On Saturday, April 30, 2023, people in parts of southern South America, Antarctica, 
-            and the Pacific and Southern Oceans will have a chance to witness a partial eclipse of the Sun just before and during sunset.</div>
-          </div>
-         
-
-          
+          <div className="hero--row">
+            <div className="hero--title__card">
+              <div className="hero--title">UPCOMING ECLIPSES IN THE UNITED STATES! <hr className="hero--title__br" /></div>
 
 
-          <div className="hero--countlearn">
-            <div className="hero--countdowns">
-              <div className="hero--countdown__total">
-                <div className="hero--countdown__total-title">TOTAL SOLAR</div>
-                <div className="hero--countdown__total-time">00:00:00:00:00:00 </div>
-              </div>
-              <hr className="hero--countdown__br" />
-            
-              <div className="hero--countdown__annular">
-                <div className="hero--countdown__annular-title">ANNULAR SOLAR</div>
-                <div className="hero--countdown__annular-time">00:00:00:00:00:00 </div>
-              </div>
-              
-
+              <div className="hero--title__para">On Saturday, April 30, 2023, people in parts of southern South America, Antarctica,
+                and the Pacific and Southern Oceans will have a chance to witness a partial eclipse of the Sun just before and during sunset.</div>
             </div>
 
-            <div className="learn--links">
-              <div className="learn--links__title"> LEARN MORE </div>
-              <div className="learn--links__total pointer"> TOTAL SOLAR</div>
-              <div className="learn--links__annular pointer"> ANNULAR SOLAR</div>
-            </div>
 
+
+
+           
+              <div className="hero--countlearn">
+                <div className="hero--countdowns">
+                  <div className="hero--countdown__total">
+                    <div className="hero--countdown__total-title">TOTAL SOLAR</div>
+                    <div className="hero--countdown__total-time">00:00:00:00:00:00 </div>
+                  </div>
+                  <hr className="hero--countdown__br" />
+
+                  <div className="hero--countdown__annular">
+                    <div className="hero--countdown__annular-title">ANNULAR SOLAR</div>
+                    <div className="hero--countdown__annular-time">00:00:00:00:00:00 </div>
+                  </div>
+
+
+                </div>
+
+                <div className="learn--links">
+                  <div className="learn--links__title"> LEARN MORE </div>
+                  <div className="learn--links__total pointer"> TOTAL SOLAR</div>
+                  <div className="learn--links__annular pointer"> ANNULAR SOLAR</div>
+                </div>
+               
+            </div>
           </div>
         </div>
         <Info />
       </div>
-     
+
     </>
   );
 };
