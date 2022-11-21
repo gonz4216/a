@@ -1,21 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./hero.css";
 import Info from './Info';
+import Countdown from 'react-countdown';
 const Hero = () => {
-  //oct 14 2023
 
-  const countDownDate = new Date("Oct 15, 2024 23:59:59").getTime()
-  let x = setInterval(function() {
-    let now = new Date().getTime()
 
-    let distance = countDownDate - now
-
-    let days = Math.floor(distance / (1000 * 60 * 60 * 24))
-    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-    let min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-    let seconds = Math.floor((distance % (1000 * 60)) / 1000)
-    
-  })
+let totalDate = <Countdown date={Date.now() + 3.154e+10} />
+let annDate = <Countdown date={Date.now() + 3.154e+10} />
+ 
   return (
     <>
       <div className="hero">
@@ -43,13 +35,13 @@ const Hero = () => {
                 <div className="hero--countdowns">
                   <div className="hero--countdown__total">
                     <div className="hero--countdown__total-title">TOTAL SOLAR</div>
-                    <div className="hero--countdown__total-time">00:00:00:00:00:00 </div>
+                    <div className="hero--countdown__total-time">{totalDate}</div>
                   </div>
                   <hr className="hero--countdown__br" />
 
                   <div className="hero--countdown__annular">
                     <div className="hero--countdown__annular-title">ANNULAR SOLAR</div>
-                    <div className="hero--countdown__annular-time">00:00:00:00:00:00 </div>
+                    <div className="hero--countdown__annular-time">{annDate}</div>
                   </div>
 
 
