@@ -210,6 +210,10 @@ max-width: 1000px;
     transform: scale(1.04);
 }
 
+.learn--links__link{
+    text-decoration: none;
+}
+
 @media (max-width: 1269px) {
     .hero--title{
         color: #ef7a41;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./hero.css";
 import Info from './Info';
 import Countdown from 'react-countdown';
@@ -49,8 +49,8 @@ let annDate = <Countdown date={Date.now() + 3.154e+10} />
 
                 <div className="learn--links">
                   <div className="learn--links__title"> LEARN MORE </div>
-                  <div className="learn--links__total pointer"> TOTAL SOLAR</div>
-                  <div className="learn--links__annular pointer"> ANNULAR SOLAR</div>
+                  <a className="learn--links__link" href="/solarinfo"><div className="learn--links__total pointer">TOTAL SOLAR </div></a>
+                  <a className="learn--links__link" href="/anninfo"><div className="learn--links__annular pointer"> ANNULAR SOLAR</div></a>
                 </div>
                
             </div>
